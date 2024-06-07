@@ -1,0 +1,136 @@
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/* LOADING PAGE */
+
+.preloader {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: var(--window-height);
+    background: rgb(49, 49, 49);
+    overflow: hidden;
+    z-index: 99999999;
+}
+
+.preloader__wrap {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.preloader__one,
+.preloader__two {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.preloader__one {
+    animation: spin1 2.3s infinite linear;
+    -webkit-animation: spin1 2.3s infinite linear;
+}
+
+.preloader__two {
+    animation: spin2 2.3s infinite linear;
+    -webkit-animation: spin2 2.3s infinite linear;
+    transform: rotate(45deg);
+}
+
+.one,
+.five {
+    border-top: 3px solid white;
+}
+
+.two,
+.six {
+    border-right: 3px solid white;
+}
+
+.three,
+.seven {
+    border-bottom: 3px solid white;
+}
+
+.four,
+.eight {
+    border-left: 3px solid white;
+}
+
+.one {
+    top: -200px;
+}
+
+.two {
+    right: -200px;
+}
+
+.three {
+    bottom: -200px;
+}
+
+.four {
+    left: -200px;
+}
+
+.five {
+    right: -141px;
+    bottom: 141px;
+}
+
+.six {
+    left: 141px;
+    top: 141px;
+}
+
+.seven {
+    left: -141px;
+    top: 141px;
+}
+
+.eight {
+    right: 141px;
+    top: -141px;
+}
+
+@keyframes spin1 {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    } 20% {
+        opacity: 0.5;
+    } 50% {
+        opacity: .2;
+    } 100% {
+        opacity: 1;
+    } 50% {
+        opacity: .2;
+    } 20% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes spin1 {
+    from {
+        transform: rotate(45deg);
+    } to {
+        transform: rotate(405deg);
+    } 20% {
+        opacity: 0.5;
+    } 50% {
+        opacity: .2;
+    } 100% {
+        opacity: 1;
+    } 50% {
+        opacity: .2;
+    } 20% {
+        opacity: 0.5;
+    }
+}

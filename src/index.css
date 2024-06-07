@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=VT323&display=swap');
+
+:root {
+    --clr-red: rgb(150, 0, 0);
+    --window-width: 100%;
+    --window-height: 100vh;
+    --clr-none: rgba(0,0,0,.0001);
+}
+
+body {
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    color: rgb(248, 248, 248);
+    /*background-color: rgb(49, 49, 49);*/
+    background-color: black;
+    font-family: "Playfair Display", serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+    overflow: hidden;
+    height: var(--window-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+}
+
+.stop {
+    overflow: hidden;
+}
+
+
+#page {
+    position: relative;
+    transition: 1s all ease-in-out;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* NAVBAR */
+
+.menuopen {
+    opacity: .6;
+    filter: blur(20px);
+    transform: scale(1.2);
+}
+
+
+/*/////////////////////////////*/
+
+/*.nav-menu a {
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin-left: 2rem;
+}*/
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* MEDIA */
+
+/* Size */
+@media(max-width: 800px) {
+    
+}
+
+@media(max-width: 400px) {
+    
+}
+
+

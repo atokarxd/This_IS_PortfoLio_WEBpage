@@ -1,0 +1,60 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* FOOTER */
+
+footer {
+    box-shadow: 0px -2px 20px black;
+    max-height: 35vh;
+    position: relative;
+    z-index: 999;
+    cursor: default;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(31,31,31);
+    height: 35vh;
+}
+
+footer #left-footer p {
+    margin: 0;
+    font-family: "Londrina Outline", sans-serif;
+    line-height: 3rem;
+    font-size: 4rem;
+    display: block;
+    text-decoration: none;
+}
+
+footer #left-footer p:last-child {
+    text-align: end;
+    font-size: 4.5rem;
+}
+
+footer #center-footer {
+    font-size: 1.5rem;
+}
+
+footer #right-footer {
+    align-self: center;
+}
+
+footer #right-footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer #right-footer a {
+    text-decoration: none;
+    color: rgb(166, 166, 166);
+    transition: color .7s linear .5s;
+}
+
+footer #right-footer a:hover {
+    color: white;
+    transition: color .7s linear .5s;
+}
+
+footer #right-footer .main-text {
+    color: white;
+    font-size: 2rem;
+}

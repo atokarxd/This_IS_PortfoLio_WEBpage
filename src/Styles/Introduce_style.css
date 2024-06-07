@@ -1,0 +1,67 @@
+.introduce {
+    border-bottom: 1px solid white;
+}
+
+.introduce p {
+    max-width: 100%;
+    word-wrap: break-word;
+    background: linear-gradient(white, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: difference;
+    cursor:default;
+    position: relative;
+    z-index: 6;
+    animation: showUp 1s ease-in-out 1;
+}
+
+.introduce .background .overlay-background {
+    background: linear-gradient(rgba(0,0,0, .00001), rgba(0,0,0, .00001), rgb(49, 49, 49));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+}
+
+.introduce .background #desert-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: 4;
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+        transform: translate(0, 250px);
+    }
+    25% {
+        opacity: 0;
+    }
+    85% {
+        opacity: .9;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0)
+    }
+}
+
+.ScrollingEffect {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    
+
+    z-index: 9977;
+}
